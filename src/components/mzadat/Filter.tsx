@@ -3,6 +3,12 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group.tsx'
 import { FilterProps } from '@/types/types'
 
 export default function Filter({ title, filters, cols = 4 }: FilterProps) {
+  const gridColsClass =
+    {
+      2: 'grid-cols-2',
+      4: 'grid-cols-4',
+    }[cols] || 'grid-cols-4'
+
   return (
     <div className="flex flex-col gap-3 text-lg">
       {title && <h1 className="text-custom-gray font-semibold [direction:rtl]">{title}</h1>}
@@ -10,7 +16,7 @@ export default function Filter({ title, filters, cols = 4 }: FilterProps) {
       <ToggleGroup
         type="single"
         variant="outline"
-        className={`grid grid-cols-${cols} gap-5 [direction:rtl]`}
+        className={`grid ${gridColsClass} gap-5 [direction:rtl]`}
       >
         {filters.map((type) => (
           <ToggleGroupItem
