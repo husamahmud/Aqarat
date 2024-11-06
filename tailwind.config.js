@@ -17,6 +17,7 @@ export default {
         'gold-dark': '#B9A072',
         'gold-darker': '#907D59',
         'gray-border': '#D9D9D9',
+        'custom-gray': '#5A5F69',
       },
     },
   },
