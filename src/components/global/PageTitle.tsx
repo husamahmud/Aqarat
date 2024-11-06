@@ -7,17 +7,12 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb'
-
-type PageTitleProps = {
-  title: string
-  route: string
-  routeLabel: string
-}
+import { PageTitleProps } from '@/types/types.ts'
 
 export default function PageTitle({ title, route, routeLabel }: PageTitleProps) {
   return (
-    <div className="w-screen bg-[#CAB07D14]">
-      <div className="container mx-auto flex flex-row-reverse items-center justify-between py-4">
+    <div className="mt-10 w-screen bg-[#CAB07D14]">
+      <div className="container mx-auto flex flex-row-reverse items-center justify-between py-6">
         <h1 className="text-gold text-3xl font-semibold">{title}</h1>
 
         <Breadcrumb>

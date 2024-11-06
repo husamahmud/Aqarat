@@ -13,7 +13,7 @@ export default function SocialHeader() {
       <div className="container mx-auto flex items-center justify-between py-2">
         {/* Language Selector */}
         <Select>
-          <SelectTrigger className="w-[130px] border-none">
+          <SelectTrigger className="w-[130px] border-none focus:ring-0">
             <SelectValue
               placeholder={
                 <p className="flex items-center gap-2">
@@ -22,7 +22,6 @@ export default function SocialHeader() {
                 </p>
               }
             />
-            g
           </SelectTrigger>
           <SelectContent className="w-full">
             {LANGUAGES.map(({ lang, name, flag }) => (
