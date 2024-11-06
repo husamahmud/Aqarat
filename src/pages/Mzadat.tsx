@@ -1,6 +1,7 @@
 import SocialHeader from '@/components/layout/SocialHeader.tsx'
 import Header from '@/components/layout/Header.tsx'
 import PageTitle from '@/components/global/PageTitle.tsx'
+import MzadatContent from '@/components/mzadat/MzadatContent.tsx'
 
 export default function Mzadat() {
   return (
@@ -12,7 +13,7 @@ export default function Mzadat() {
         route="/mzadat"
         routeLabel="مزادات"
       />
-      <h1>Mzadat</h1>
+      <MzadatContent />
     </>
   )
 }

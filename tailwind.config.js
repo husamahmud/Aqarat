@@ -14,6 +14,8 @@ export default {
       },
       colors: {
         gold: '#CBB07D',
+        'gold-dark': '#B9A072',
+        'gold-darker': '#907D59',
         'gray-border': '#D9D9D9',
       },
     },
