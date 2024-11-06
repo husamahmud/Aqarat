@@ -1,10 +1,6 @@
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group.tsx'
 
-type FilterProps = {
-  title?: string
-  filters: string[]
-  cols?: number
-}
+import { FilterProps } from '@/types/types'
 
 export default function Filter({ title, filters, cols }: FilterProps) {
   return (

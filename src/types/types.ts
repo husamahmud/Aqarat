@@ -15,3 +15,9 @@ export type CardProps = {
   price: number
   condition: 'سكني' | 'جديد'
 }
+
+export type FilterProps = {
+  title?: string
+  filters: string[]
+  cols?: number
+}
