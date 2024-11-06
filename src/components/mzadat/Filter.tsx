@@ -2,7 +2,7 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group.tsx'
 
 import { FilterProps } from '@/types/types'
 
-export default function Filter({ title, filters, cols }: FilterProps) {
+export default function Filter({ title, filters, cols = 4 }: FilterProps) {
   return (
     <div className="flex flex-col gap-3 text-lg">
       {title && <h1 className="text-custom-gray font-semibold [direction:rtl]">{title}</h1>}

@@ -1,7 +1,7 @@
 import SearchInput from '@/components/global/SearchInput.tsx'
 import AvailableMzadat from '@/components/mzadat/AvailableMzadat.tsx'
-import PropertyFilters from '@/components/mzadat/PropertyFilters.tsx'
 import PropertyView from '@/components/mzadat/PropertyView.tsx'
+import PropertyFilters from '@/components/mzadat/PropertyFilters.tsx'
 
 import { dummyData } from '@/lib/constants/cardsData.ts'
 
