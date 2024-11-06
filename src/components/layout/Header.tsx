@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex flex-1 items-center gap-3">
           {/* Login Button */}
           <Link to="/">
-            <Button className="bg-gold-button hover:bg-gold-button/80 rounded-3xl px-6 py-7">
+            <Button className="bg-gold hover:bg-gold-button/80 rounded-3xl px-6 py-7">
               <span className="font-bold">تسجيل الدخول</span>
               <GoPerson />
             </Button>

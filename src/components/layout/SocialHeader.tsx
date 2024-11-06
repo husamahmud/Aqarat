@@ -14,7 +14,15 @@ export default function SocialHeader() {
         {/* Language Selector */}
         <Select>
           <SelectTrigger className="w-[130px] border-none">
-            <SelectValue />
+            <SelectValue
+              placeholder={
+                <p className="flex items-center gap-2">
+                  <span className="">{LANGUAGES[0].name}</span>
+                  <span className="text-lg">{LANGUAGES[0].flag}</span>
+                </p>
+              }
+            />
+            g
           </SelectTrigger>
           <SelectContent className="w-full">
             {LANGUAGES.map(({ lang, name, flag }) => (

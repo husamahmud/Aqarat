@@ -14,7 +14,6 @@ export default {
       },
       colors: {
         gold: '#CBB07D',
-        'gold-button': '#CAB07D',
         'gray-border': '#D9D9D9',
       },
     },
