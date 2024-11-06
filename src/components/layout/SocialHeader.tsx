@@ -38,8 +38,8 @@ export default function SocialHeader() {
             <a href="/">
               <Icon
                 key={name}
-                size={24}
-                className="rounded-full border p-1 text-white transition-colors hover:bg-white hover:text-[#0D192E]"
+                size={28}
+                className="rounded-full border p-1.5 text-white transition-colors hover:bg-white hover:text-[#0D192E]"
                 aria-label={name}
               />
             </a>

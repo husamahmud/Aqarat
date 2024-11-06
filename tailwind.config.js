@@ -12,7 +12,11 @@ export default {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
-      colors: {},
+      colors: {
+        gold: '#CBB07D',
+        'gold-button': '#CAB07D',
+        'gray-border': '#D9D9D9',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
