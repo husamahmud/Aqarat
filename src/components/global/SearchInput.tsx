@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Search } from 'lucide-react'
 
-import { Input } from '@/components/ui/input.tsx'
+import { Input } from '@/components/ui/input'
 
 export default function SearchInput() {
-  const [inputValue, setInputValue] = useState<string | undefined>('')
+  const [inputValue, setInputValue] = useState('')
 
   return (
     <div className="w-full space-y-2">

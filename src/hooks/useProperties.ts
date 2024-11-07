@@ -1,6 +1,8 @@
 import { useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
+
 import { CardProps } from '@/types/types'
+
 import { dummyData } from '@/lib/constants/cardsData'
 import {
   TYPE_FILTER,

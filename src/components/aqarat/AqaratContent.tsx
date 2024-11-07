@@ -6,6 +6,7 @@ import PropertyView from '@/components/aqarat/PropertyView.tsx'
 import PropertyFilters from '@/components/aqarat/PropertyFilters.tsx'
 import { Button } from '@/components/ui/button.tsx'
 import { SmallFilter } from '@/components/aqarat/SmallFilter.tsx'
+
 import { TYPE_FILTER } from '@/lib/constants/filterValues.ts'
 
 export default function AqaratContent() {
