@@ -43,9 +43,11 @@ export default function SocialHeader() {
         {/* Social Icons */}
         <div className="flex gap-2">
           {SOCIAL_ICONS.map(({ component: Icon, name }) => (
-            <a href="/">
+            <a
+              href="/"
+              key={name}
+            >
               <Icon
-                key={name}
                 size={28}
                 className="rounded-full border p-1.5 text-white transition-colors hover:bg-white hover:text-[#0D192E]"
                 aria-label={name}

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Search } from 'lucide-react'
+
 import { Input } from '@/components/ui/input.tsx'
 
 export default function SearchInput() {
@@ -19,7 +20,7 @@ export default function SearchInput() {
 
         <Input
           className="h-11 border-[#F1F2F7] py-3 pe-9 ps-32 text-right text-black"
-          placeholder="ابحث عن المزادات"
+          placeholder="ابحث عن العقارات"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />

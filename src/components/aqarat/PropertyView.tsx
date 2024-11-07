@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import Card from '@/components/mzadat/Card'
+import Card from '@/components/aqarat/Card'
 import { Button } from '@/components/ui/button'
 
 import { CardProps } from '@/types/types'

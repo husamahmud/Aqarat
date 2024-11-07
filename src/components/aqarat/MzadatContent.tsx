@@ -1,11 +1,11 @@
 import { FaFilter } from 'react-icons/fa'
 
 import SearchInput from '@/components/global/SearchInput.tsx'
-import AvailableMzadat from '@/components/mzadat/AvailableMzadat.tsx'
-import PropertyView from '@/components/mzadat/PropertyView.tsx'
-import PropertyFilters from '@/components/mzadat/PropertyFilters.tsx'
+import AvailableMzadat from '@/components/aqarat/AvailableMzadat.tsx'
+import PropertyView from '@/components/aqarat/PropertyView.tsx'
+import PropertyFilters from '@/components/aqarat/PropertyFilters.tsx'
 import { Button } from '@/components/ui/button.tsx'
-import { SmallFilter } from '@/components/mzadat/SmallFilter.tsx'
+import { SmallFilter } from '@/components/aqarat/SmallFilter.tsx'
 
 import { dummyData } from '@/lib/constants/cardsData.ts'
 import { TYPE_FILTER } from '@/lib/constants/filterValues.ts'

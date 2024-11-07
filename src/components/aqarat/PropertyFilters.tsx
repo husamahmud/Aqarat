@@ -1,4 +1,4 @@
-import Filter from '@/components/mzadat/Filter.tsx'
+import Filter from '@/components/aqarat/Filter.tsx'
 
 import {
   PROPERTY_CONDITION,
