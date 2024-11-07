@@ -33,7 +33,10 @@ export default function MzadatContent() {
       </div>
 
       <div className="flex justify-end pt-5 sm:hidden">
-        <SmallFilter filters={TYPE_FILTER} />
+        <SmallFilter
+          filters={TYPE_FILTER}
+          filter="filter"
+        />
       </div>
 
       <div className="grid grid-cols-2 gap-4 py-5 text-black sm:py-12 lg:grid-cols-3">
