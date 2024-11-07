@@ -35,7 +35,7 @@ export default function Filter({ title, filters, cols = 4, filter }: FilterProps
       <ToggleGroup
         type="single"
         variant="outline"
-        className={clx('grid gap-5 [direction:rtl]', gridColsClass)}
+        className={clx('grid gap-3 [direction:rtl]', gridColsClass)}
       >
         {filters.map(({ value, label }) => (
           <ToggleGroupItem
