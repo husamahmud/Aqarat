@@ -19,7 +19,7 @@ export default function Card({
   return (
     <Link
       to=""
-      className="overflow-hidden rounded-2xl bg-[#FCF9F2]"
+      className="overflow-hidden rounded-2xl bg-[#FCF9F2] transition-all duration-200 hover:-translate-y-1 hover:shadow-2xl"
     >
       {/* image */}
       <img
