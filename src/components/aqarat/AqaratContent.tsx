@@ -1,18 +1,14 @@
 import { FaFilter } from 'react-icons/fa'
 
 import SearchInput from '@/components/global/SearchInput.tsx'
-import AvailableMzadat from '@/components/aqarat/AvailableMzadat.tsx'
+import AvailableAqarat from '@/components/aqarat/AvailableAqarat.tsx'
 import PropertyView from '@/components/aqarat/PropertyView.tsx'
 import PropertyFilters from '@/components/aqarat/PropertyFilters.tsx'
 import { Button } from '@/components/ui/button.tsx'
 import { SmallFilter } from '@/components/aqarat/SmallFilter.tsx'
-
-import { dummyData } from '@/lib/constants/cardsData.ts'
 import { TYPE_FILTER } from '@/lib/constants/filterValues.ts'
 
-export default function MzadatContent() {
-  const count = dummyData.length
-
+export default function AqaratContent() {
   return (
     <div className="container mx-auto px-3 lg:px-10">
       <div className="item-center flex justify-between gap-4 pb-5 sm:hidden">
@@ -29,7 +25,7 @@ export default function MzadatContent() {
         <div className="hidden sm:block">
           <SearchInput />
         </div>
-        <AvailableMzadat count={count} />
+        <AvailableAqarat />
       </div>
 
       <div className="flex justify-end pt-5 sm:hidden">
