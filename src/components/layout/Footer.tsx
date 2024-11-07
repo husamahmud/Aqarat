@@ -15,14 +15,14 @@ export default function Footer() {
                 key={index}
                 className="[direction:rtl]"
               >
-                <h3 className="mb-5 text-center font-bold text-white sm:text-right">
+                <h3 className="mb-5 text-center font-bold text-stone-50 dark:text-stone-50 sm:text-right">
                   {group.title}
                 </h3>
                 <ul className="space-y-2 text-center sm:text-right md:space-y-4">
                   {group.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
                       <Link
-                        className="text-nowrap border-gold text-white hover:border-b"
+                        className="text-nowrap border-gold text-stone-50 hover:border-b dark:text-stone-50"
                         to=""
                       >
                         {link}
@@ -41,7 +41,7 @@ export default function Footer() {
               className="w-[150px]"
             />
 
-            <p className="font-bold text-white [direction:rtl] md:max-w-xs">
+            <p className="font-bold text-stone-50 [direction:rtl] dark:text-stone-50 md:max-w-xs">
               موقع يوفر لك كل ما تحتاجه في العقارات إضافة .. إعلان .. شراء عقار
             </p>
 
