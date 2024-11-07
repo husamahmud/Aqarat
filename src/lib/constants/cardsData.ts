@@ -10,7 +10,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 4,
     rooms: 5,
     price: 2500000,
-    condition: 'سكني',
+    condition: 'بيع',
+    nature: 'تجاري',
   },
   {
     type: 'شقة',
@@ -21,7 +22,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 2,
     rooms: 3,
     price: 800000,
-    condition: 'جديد',
+    condition: 'بيع',
+    nature: 'سكني',
   },
   {
     type: 'ارض',
@@ -32,7 +34,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 0,
     rooms: 0,
     price: 1200000,
-    condition: 'جديد',
+    condition: 'ايجار',
+    nature: 'تجاري',
   },
   {
     type: 'قصر',
@@ -43,7 +46,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 8,
     rooms: 10,
     price: 15000000,
-    condition: 'جديد',
+    condition: 'بيع',
+    nature: 'تجاري',
   },
   {
     type: 'شالية',
@@ -54,7 +58,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 3,
     rooms: 4,
     price: 1500000,
-    condition: 'سكني',
+    condition: 'ايجار',
+    nature: 'تجاري',
   },
   {
     type: 'شالية',
@@ -65,7 +70,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 2,
     rooms: 3,
     price: 900000,
-    condition: 'جديد',
+    condition: 'ايجار',
+    nature: 'سكني',
   },
   {
     type: 'فيلا',
@@ -76,7 +82,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 4,
     rooms: 6,
     price: 2800000,
-    condition: 'جديد',
+    condition: 'بيع',
+    nature: 'تجاري',
   },
   {
     type: 'شقة',
@@ -87,7 +94,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 2,
     rooms: 2,
     price: 600000,
-    condition: 'جديد',
+    condition: 'ايجار',
+    nature: 'تجاري',
   },
   {
     type: 'ارض',
@@ -98,7 +106,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 0,
     rooms: 0,
     price: 1500000,
-    condition: 'جديد',
+    condition: 'بيع',
+    nature: 'سكني',
   },
   {
     type: 'قصر',
@@ -109,7 +118,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 10,
     rooms: 12,
     price: 20000000,
-    condition: 'جديد',
+    condition: 'ايجار',
+    nature: 'تجاري',
   },
   {
     type: 'فيلا',
@@ -120,7 +130,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 3,
     rooms: 4,
     price: 1300000,
-    condition: 'جديد',
+    condition: 'ايجار',
+    nature: 'تجاري',
   },
   {
     type: 'شالية',
@@ -131,7 +142,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 2,
     rooms: 3,
     price: 850000,
-    condition: 'جديد',
+    condition: 'بيع',
+    nature: 'تجاري',
   },
   {
     type: 'فيلا',
@@ -142,7 +154,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 5,
     rooms: 7,
     price: 3200000,
-    condition: 'جديد',
+    condition: 'ايجار',
+    nature: 'سكني',
   },
   {
     type: 'شقة',
@@ -153,7 +166,8 @@ export const dummyData: CardProps[] = [
     bathrooms: 2,
     rooms: 3,
     price: 750000,
-    condition: 'جديد',
+    condition: 'بيع',
+    nature: 'تجاري',
   },
   {
     type: 'ارض',
@@ -164,6 +178,7 @@ export const dummyData: CardProps[] = [
     bathrooms: 0,
     rooms: 0,
     price: 1100000,
-    condition: 'جديد',
+    condition: 'ايجار',
+    nature: 'سكني',
   },
 ]

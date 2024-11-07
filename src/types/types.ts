@@ -13,7 +13,8 @@ export type CardProps = {
   bathrooms: number
   rooms: number
   price: number
-  condition: 'سكني' | 'جديد'
+  condition: 'ايجار' | 'بيع'
+  nature: 'تجاري' | 'سكني'
 }
 
 export type Filters = {
