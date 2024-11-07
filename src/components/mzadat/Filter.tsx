@@ -1,8 +1,27 @@
-import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group.tsx'
+import { useSearchParams } from 'react-router-dom'
+import clx from 'clsx'
+
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
 
 import { FilterProps } from '@/types/types'
 
-export default function Filter({ title, filters, cols = 4 }: FilterProps) {
+export default function Filter({ title, filters, cols = 4, filter }: FilterProps) {
+  const [searchParams, setSearchParams] = useSearchParams()
+  const selectedFilter = filter ? searchParams.get(filter) : undefined
+
+  /**
+   * Handles toggle clicks by updating the URL search params.
+   * @param {string} value - The value of the filter to toggle.
+   */
+  const handleToggleClick = (value: string) => {
+    const currentParams = Object.fromEntries(searchParams)
+
+    if (selectedFilter === value) delete currentParams[filter]
+    else currentParams[filter] = value
+
+    setSearchParams(currentParams)
+  }
+
   const gridColsClass =
     {
       2: 'grid-cols-2',
@@ -16,42 +35,26 @@ export default function Filter({ title, filters, cols = 4 }: FilterProps) {
       <ToggleGroup
         type="single"
         variant="outline"
-        className={`grid ${gridColsClass} gap-5 [direction:rtl]`}
+        className={clx('grid gap-5 [direction:rtl]', gridColsClass)}
       >
-        {filters.map((type) => (
+        {filters.map(({ value, label }) => (
           <ToggleGroupItem
-            key={type}
-            value={type}
-            aria-label={`Toggle ${type}`}
+            key={value}
+            value={value}
+            aria-label={`Toggle ${label}`}
             size="lg"
-            className="px-5 data-[state=on]:border-gold data-[state=on]:bg-gold/10"
+            className={clx(
+              'px-5',
+              selectedFilter === value
+                ? 'border-gold bg-gold/10'
+                : 'data-[state=on]:border-gold data-[state=on]:bg-gold/10'
+            )}
+            onClick={() => handleToggleClick(value)}
           >
-            {type}
+            {label}
           </ToggleGroupItem>
         ))}
       </ToggleGroup>
     </div>
-  )
-}
-
-export function SmallFilter({ filters }: { filters: string[] }) {
-  return (
-    <ToggleGroup
-      type="single"
-      variant="outline"
-      className="scrollbar-none flex gap-3 overflow-scroll [direction:rtl]"
-    >
-      {filters.map((type) => (
-        <ToggleGroupItem
-          key={type}
-          value={type}
-          aria-label={`Toggle ${type}`}
-          size="lg"
-          className="px-7 text-black data-[state=on]:border-gold data-[state=on]:bg-gold/10"
-        >
-          {type}
-        </ToggleGroupItem>
-      ))}
-    </ToggleGroup>
   )
 }

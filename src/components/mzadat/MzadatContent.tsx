@@ -5,7 +5,7 @@ import AvailableMzadat from '@/components/mzadat/AvailableMzadat.tsx'
 import PropertyView from '@/components/mzadat/PropertyView.tsx'
 import PropertyFilters from '@/components/mzadat/PropertyFilters.tsx'
 import { Button } from '@/components/ui/button.tsx'
-import { SmallFilter } from '@/components/mzadat/Filter.tsx'
+import { SmallFilter } from '@/components/mzadat/SmallFilter.tsx'
 
 import { dummyData } from '@/lib/constants/cardsData.ts'
 import { TYPE_FILTER } from '@/lib/constants/filterValues.ts'

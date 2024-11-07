@@ -13,24 +13,28 @@ export default function PropertyFilters() {
       <Filter
         filters={TYPE_FILTER}
         cols={4}
+        filter="filter"
       />
 
       <Filter
         title="حالة العقار"
         filters={PROPERTY_CONDITION}
         cols={2}
+        filter="condition"
       />
 
       <Filter
         title="طبيعة العقار"
         filters={PROPERTY_NATURE}
         cols={2}
+        filter="nature"
       />
 
       <Filter
         title="نوع العقار"
         filters={PROPERTY_TYPE}
         cols={4}
+        filter="type"
       />
     </div>
   )

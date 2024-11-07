@@ -16,8 +16,14 @@ export type CardProps = {
   condition: 'سكني' | 'جديد'
 }
 
+export type Filters = {
+  value: string
+  label: string
+}[]
+
 export type FilterProps = {
   title?: string
-  filters: string[]
+  filters: Filters
   cols?: number
+  filter: string
 }
