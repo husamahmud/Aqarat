@@ -1,39 +1,26 @@
 import { Link } from 'react-router-dom'
-import { GoChevronUp } from 'react-icons/go'
-
-import { Button } from '@/components/ui/button.tsx'
 
 import { SOCIAL_ICONS } from '@/lib/constants/socialHeader.ts'
 import { FOOTER_LINKS_GROUP } from '@/lib/constants/footer.ts'
 
-/**
- * Smoothly scrolls the window to the top.
- */
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  })
-}
-
 export default function Footer() {
   return (
     <footer className="bg-[#0D192E] pb-10 pt-16">
-      <div className="container mx-auto">
-        <div className="flex gap-36 border-b border-dashed px-3 pb-6 lg:px-10">
+      <div className="container relative mx-auto">
+        <div className="flex flex-col items-center gap-5 border-b border-dashed px-3 pb-6 md:flex-row md:gap-10 lg:gap-36 lg:px-10">
           {/* Footer Links */}
-          <div className="flex flex-1 gap-20 [direction:rtl]">
+          <div className="grid flex-1 grid-cols-1 gap-5 [direction:rtl] md:flex md:gap-20">
             {FOOTER_LINKS_GROUP.map((group, index) => (
               <div
                 key={index}
                 className="[direction:rtl]"
               >
                 <h3 className="mb-5 font-bold">{group.title}</h3>
-                <ul className="space-y-4">
+                <ul className="space-y-2 md:space-y-4">
                   {group.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
                       <Link
-                        className="border-gold hover:border-b"
+                        className="text-nowrap border-gold hover:border-b"
                         to=""
                       >
                         {link}
@@ -52,11 +39,11 @@ export default function Footer() {
               className="w-[150px]"
             />
 
-            <p className="max-w-xs font-bold [direction:rtl]">
+            <p className="font-bold [direction:rtl] md:max-w-xs">
               موقع يوفر لك كل ما تحتاجه في العقارات إضافة .. إعلان .. شراء عقار
             </p>
 
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-3 gap-2 md:grid-cols-1 lg:grid-cols-2">
               <img
                 src="/appstore.png"
                 alt="appstore"
@@ -76,9 +63,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="relative flex justify-between pt-3">
+        <div className="flex flex-col items-center justify-center gap-5 px-3 pb-5 pt-8 md:flex-row md:justify-between lg:px-10">
           {/* Copyright */}
-          <p className="relative flex gap-2 text-white">
+          <p className="flex gap-2 text-white">
             <p>2024 © </p>
             <a
               href="/"
@@ -88,14 +75,6 @@ export default function Footer() {
             </a>
             <span>جميع الحقوق محفوظة</span>
           </p>
-
-          {/* Back to Top Button */}
-          <Button
-            className="absolute -left-20 top-0 bg-gold-dark hover:bg-gold-darker"
-            onClick={scrollToTop}
-          >
-            <GoChevronUp />
-          </Button>
 
           {/* Social Icons */}
           <div className="flex gap-2">
