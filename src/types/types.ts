@@ -28,3 +28,8 @@ export type FilterProps = {
   cols?: number
   filter: string
 }
+
+export type FooterLinkGroup = {
+  title: string
+  links: string[]
+}

@@ -7,7 +7,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="mzadat"
+          path="aqarat"
           element={<Aqarat />}
         />
       </Routes>
