@@ -29,15 +29,17 @@ export default function Card({
       />
 
       {/* content */}
-      <div className="flex flex-col gap-3 p-5">
+      <div className="flex flex-col gap-3 px-3 py-5">
         {/* tag */}
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-1">
           {tag && (
-            <span className="rounded-full bg-[#FCCD36] px-5 py-1 text-sm font-bold">{tag}</span>
+            <span className="text-nowrap rounded-full bg-[#FCCD36] px-3 py-1 text-xs font-bold">
+              {tag}
+            </span>
           )}
 
           {/* title & type */}
-          <p className="ml-auto mr-0 font-bold">
+          <p className="ml-auto mr-0 text-nowrap font-bold [direction:rtl]">
             {type} - {title}
           </p>
         </div>
@@ -66,7 +68,7 @@ export default function Card({
 
         {/* price */}
         <p className="ml-auto mr-0 flex gap-1 font-bold">
-          <span className="text-gold-darker font-normal">ر.س</span>
+          <span className="font-normal text-gold-darker">ر.س</span>
           {formatPrice(price)}
         </p>
       </div>

@@ -11,7 +11,7 @@ export default function Filter({ title, filters, cols = 4 }: FilterProps) {
 
   return (
     <div className="flex flex-col gap-3 text-lg">
-      {title && <h1 className="text-custom-gray font-semibold [direction:rtl]">{title}</h1>}
+      {title && <h1 className="font-semibold text-custom-gray [direction:rtl]">{title}</h1>}
 
       <ToggleGroup
         type="single"
@@ -24,12 +24,34 @@ export default function Filter({ title, filters, cols = 4 }: FilterProps) {
             value={type}
             aria-label={`Toggle ${type}`}
             size="lg"
-            className="data-[state=on]:border-gold data-[state=on]:bg-gold/10 px-5"
+            className="px-5 data-[state=on]:border-gold data-[state=on]:bg-gold/10"
           >
             {type}
           </ToggleGroupItem>
         ))}
       </ToggleGroup>
     </div>
+  )
+}
+
+export function SmallFilter({ filters }: { filters: string[] }) {
+  return (
+    <ToggleGroup
+      type="single"
+      variant="outline"
+      className="scrollbar-none flex gap-3 overflow-scroll [direction:rtl]"
+    >
+      {filters.map((type) => (
+        <ToggleGroupItem
+          key={type}
+          value={type}
+          aria-label={`Toggle ${type}`}
+          size="lg"
+          className="px-7 text-black data-[state=on]:border-gold data-[state=on]:bg-gold/10"
+        >
+          {type}
+        </ToggleGroupItem>
+      ))}
+    </ToggleGroup>
   )
 }

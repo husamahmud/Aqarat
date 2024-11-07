@@ -6,7 +6,7 @@ export default function SearchInput() {
   const [inputValue, setInputValue] = useState<string | undefined>('')
 
   return (
-    <div className="space-y-2">
+    <div className="w-full space-y-2">
       <div className="relative">
         <div className="text-muted-foreground/80 pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 peer-disabled:opacity-50">
           <Search

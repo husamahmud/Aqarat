@@ -9,7 +9,7 @@ import {
 
 export default function PropertyFilters() {
   return (
-    <div className="space-y-6">
+    <div className="hidden space-y-6 pl-10 lg:block">
       <Filter
         filters={TYPE_FILTER}
         cols={4}
